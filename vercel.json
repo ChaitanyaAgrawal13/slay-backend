@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "api/ratings/submit.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    },
+    "api/upload/photo.js": {
+      "memory": 1024,
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/ratings/submit",
+      "destination": "/api/ratings/submit.js"
+    },
+    {
+      "source": "/api/upload/photo",
+      "destination": "/api/upload/photo.js"
+    }
+  ]
+}
