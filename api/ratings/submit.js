@@ -44,7 +44,8 @@ export default async function handler(req, res) {
         userAgent: req.headers['user-agent'],
         pageUrl: metadata?.pageUrl,
         timestamp: new Date().toISOString(),
-        campaign
+        campaign,
+        setId: metadata?.setId || null
       }
     }))
 

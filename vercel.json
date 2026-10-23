@@ -7,12 +7,20 @@
     "api/upload/photo.js": {
       "memory": 1024,
       "maxDuration": 30
+    },
+    "api/ratings/comment.js": {
+      "memory": 1024,
+      "maxDuration": 10
     }
   },
   "rewrites": [
     {
       "source": "/api/ratings/submit",
       "destination": "/api/ratings/submit.js"
+    },
+    {
+      "source": "/api/ratings/comment",
+      "destination": "/api/ratings/comment.js"
     },
     {
       "source": "/api/upload/photo",
